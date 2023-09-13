@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --title-color: #D8AB8E;
+    --secundary-color: #BCA176;
+    --marron-color: #604319;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box; 
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+body {
+    width: 100%;
+    height: 100vh; 
+    background-color: #2D2D2D;
+    color: white;
+    
+}  
+
+.header-background {
+    background-image: url(IMAGENES/Central/dulce-de-leche.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.header-content {
+    background-color: rgba(00, 00, 00, 55%);
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px 40px;
+    border-radius: 3%;
+}
+
+.header-content__title {
+    font-size: 3.0em;
+    font-weight: 300;
+    color: var(--title-color);
+}
+
+.header-content__text{
+    font-size: 1.5em;
+}
+
+.header-content__button{
+    font-size: 1.5em;
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 40px;
+    padding: 23px 53px;
+}
+
+.producto-calidad__titulo{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.logos-calidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.logos-calidad__picture {
+    width: 150px;
+    margin: 0 65px;
+    text-align: center;
+}
+
+.logos-calidad__img {
+    width: 100%;
+}
+
+.row{
+    visibility: hidden;
+}
+
+.logos-calidad__texto{
+    color: var(--secundary-color);
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.productos__titulo {
+    text-align: center;
+    background-color: var(--secundary-color);
+    padding: 20px;
+    margin: 0;
+}
+
+.productos__article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.productos__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto 60px;
+}
+
+.productos__info__titulo{
+    color: var(--title-color);
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: auto;
+}
+
+.productos__info__detalle{
+    font-size: 1.5em;
+    margin: 50px auto 20px;
+}
+
+.productos__info__texto{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.productos__info__button {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--title-color);
+    border: 3px solid var(--title-color);
+    padding: 8px 30px;
+    margin: 50px auto;
+}
+
+.productos__img{
+    width: 100%;
+}
+
+/* Sección producto individual*/
+
+.producto {
+    background-color: var(--secundary-color);
+}
+
+.producto__article {
+    display: flex;
+    align-items: center;
+    padding: 50px 140px;
+}
+
+.producto__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__info__titulo{
+    font-size: 3.0em;
+    font-weight: 300;
+    color: var(--marron-color);
+    margin: auto;
+}
+
+.producto__info__detalle {
+    font-size: 1.5em;
+    margin: 50px auto 20px;
+}
+
+.producto__info__texto {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--marron-color);
+    
+}
+
+.color-marron{ /* <-- Botón + INFO */
+    color: var(--marron-color);
+    border: 3px solid var(--marron-color);
+    margin-top: 30px;
+}
+
+.producto__picture{
+    margin-left: 60px;
+}
+
+.producto__img {
+    width: 100%;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.formulario__picture {
+    width: 70vw;
+}
+
+.formulario__img{
+    width: 100%;
+}
+
+.formulario__content{
+    margin: 30px 138px;
+}
+
+.form__texto{
+    font-size: 1.5em;
+    color: var(--marron-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form__label {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--marron-color);
+}
+
+.form__input{
+    background-color: #8C7759;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0 20px;
+}
+
+#button-submit {
+    margin: 30px auto 0;
+}
+
+/* RECETAS */
+
+
+.receta{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px; */
+   
+}
+
+.recetas__titulo{
+    margin: 55px auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+.receta__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 70px;
+    margin: 0 55px 70px;
+}
+
+.receta__titulo{
+    color: var(--marron-color);
+    font-weight: 300;
+    margin: 10px auto;
+    font-size: 2.5em;
+}
+
+.receta__texto{
+    margin: auto 48px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.receta__img{
+    width: 100%;
+}
+
+.receta__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secundary-color);
+    height: 250px;
+}
+
+.receta__button{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--marron-color);
+    border: 4px solid var(--marron-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #565656;
+    box-shadow: 0px -2px 5px 0px rgba(56,56,56,0.99);
+    -webkit-box-shadow: 0px -2px 5px 0px rgba(56,56,56,0.99);
+    -moz-box-shadow: 0px -2px 5px 0px rgba(56,56,56,0.99);
+    padding: 60px 0;
+}
+
+.footer__picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+}
+
+.lista__item:first-child{
+    color: var(--secundary-color);
+    margin-bottom: 27px;
+}
+
+.lista__item{
+    font-weight: 700;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.lista__item__link{
+    color: white;
+    text-decoration: none;
+}
+
+.redes__img{
+    width: 50px;
+}
+
+.ubicacion__lista__item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* --------> Medias Queries <-------- */
+
+@media (max-width: 768px) {
+
+    .header-background{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-content{
+        display: flex;
+        align-items: center;    
+        width: 90%;
+        padding: 26px 18px;
+        
+    }
+
+    .header-content__title{
+        font-size: 2em;
+    }
+
+    .header-content__text{
+        font-size: 0.9em;
+        margin: 26px auto;
+    }
+
+    .header-content__button{
+        font-size: 0.9em;
+        padding: 13px 12px;
+    }
+
+
+    /* Productos */
+
+    .producto-calidad__titulo{
+        font-size: 1.5em;
+    }
+
+
+    .logos-calidad{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    }
+
+    .logos-calidad__picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos-calidad__img{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .logos-calidad__texto{
+        font-size: 1.5em;
+    }
+
+    .row{
+        visibility: visible;
+        fill: #D8AB8E;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .row path{
+        width: 100px;
+        height: 100px;
+    }
+
+    .productos__article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos__article2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .productos__info{
+        margin: 31px 32px;
+    }
+
+    .productos__info__titulo{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .productos__info__detalle{
+        font-size: 1em;
+        margin: 18px 18px 6px;
+    }
+
+    .productos__info__texto{
+        font-size: 1em;
+        margin: 0 18px;
+    }
+
+    .productos__info__button{
+        font-size: 1em;
+        margin: 17px auto 30px;
+        padding: 4px 13px;
+    }
+
+
+    /* Producto (ALFAJORES) */
+
+    .producto__article{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .producto__picture{
+        width: 100%;
+        margin: 0;
+    }
+
+    .producto__info{
+        margin: 31px 46px;
+    }
+
+    .producto__info__titulo{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .producto__info__detalle{
+        font-size: 1em;
+        margin: 16px auto 14px ;
+    }
+
+    .producto__info__texto{
+        font-size: 1em;
+        margin-bottom: 14px;
+    }
+
+    .color-marron{ 
+        margin: 0 auto;
+    }
+
+    /* FORMULARIO */
+
+    .formulario__content{
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .form__texto{
+        font-size: 1em;
+    }
+
+    .form__label{
+        font-size: 1em;
+    }
+
+    .form__input{
+        padding: 5px;
+    }
+
+
+    /* RECETAS */
+
+    #mobileCarousel {
+        max-width: 400px; /* Ancho máximo deseado */
+        margin: 0 auto 20px; /* Margen superior e inferior y centrado horizontalmente */
+    }
+
+    .carousel-inner {
+        margin: 0; /* Elimina el margen interno del carrusel */
+    }
+
+    .carousel-item {
+        padding: 0 20px 20px; /* Agrega margen en los costados y arriba/abajo de cada tarjeta */
+    }
+
+
+    /* FOOTER */
+
+    .redes__lista{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }   
+
+    .redes__lista__item{
+        text-align: center;
+    }
+    .lista__item__link{
+        padding: 0px 30px;
+    }
+  } 
+
