@@ -121,6 +121,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: auto 60px;
+    padding: 30px;
 }
 
 .productos__info__titulo{
@@ -151,8 +152,10 @@ body {
     margin: 50px auto;
 }
 
-.productos__img{
+.productos__img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Sección producto individual*/
@@ -214,11 +217,14 @@ body {
 }
 
 .formulario__picture {
-    width: 70vw;
+    width: 100%;
+    height: 100%;
 }
 
 .formulario__img{
-    width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 }
 
 .formulario__content{
@@ -360,8 +366,82 @@ body {
 
 
 /* --------> Medias Queries <-------- */
+@media (max-width: 1191px){
+    .receta__texto{
+        margin: auto 20px;
+        font-size: 1em;
+    }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1055px){
+    .productos__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+}
+
+@media (max-width: 1024px){
+    .receta__titulo{
+        font-size: 1.7em;
+    }
+
+    .receta__texto{
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .receta__button{
+        font-size: 1em;
+    }
+
+    .producto__article{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    
+    .producto__picture{
+        width: 100%;
+        margin: 50px;
+    }
+
+     .producto__info{
+        margin: 31px 46px;
+    }
+
+    .formulario__content{
+        min-width: 100vw;
+        margin: 0 auto;
+        padding: 60px 150px;
+    }
+
+}
+
+@media (max-width: 965px){
+    .receta__titulo{
+        font-size: 1.6em;
+    }
+
+    .receta__texto{
+        font-size: 0.9em;
+    }
+
+    .receta__button{
+        font-size: 0.7em;
+    }
+
+    .redes__img{
+        width: 38px;
+    }
+
+    .footer__map{
+        width: 190px;
+    }
+}
+
+@media (max-width: 767px) {
 
     .header-background{
         display: flex;
@@ -443,6 +523,7 @@ body {
 
     .productos__info{
         margin: 31px 32px;
+        padding: 0
     }
 
     .productos__info__titulo{
@@ -506,6 +587,7 @@ body {
     /* FORMULARIO */
 
     .formulario__content{
+        min-width: 100vw;
         margin: 0 auto;
         padding: 40px;
     }
@@ -537,6 +619,18 @@ body {
         padding: 0 20px 20px; /* Agrega margen en los costados y arriba/abajo de cada tarjeta */
     }
 
+    .receta__titulo{
+        font-size: 2.5em;
+    }
+
+    .receta__texto{
+        font-size: 1em;
+    }
+
+    .receta__button{
+        font-size: 1em;
+    }
+
 
     /* FOOTER */
 
@@ -549,8 +643,21 @@ body {
     .redes__lista__item{
         text-align: center;
     }
-    .lista__item__link{
-        padding: 0px 30px;
-    }
   } 
+
+@media (max-width:320px){
+    .receta__titulo{
+        font-size: 2em;
+    }
+
+    .receta__texto{
+        font-size: 0.9em;
+    }
+
+    .receta__button{
+        font-size: 0.9em;
+    }
+
+}
+
 
